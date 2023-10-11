@@ -1,0 +1,42 @@
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:4
+        },
+        1200:{
+            items:4
+        },
+        1400:{
+            items:5
+        }
+    }
+});
+$(".klas").click(function(){
+     $(".bresim").fadeIn();
+}
+)
+$(".bresim").click(function(){
+    $(".bresim").fadeOut();
+})
+$(".ic").click(function(){
+    event.stopPropagation();
+})
+$(".item").mouseenter(function(){
+    $(".buyutec",this ).fadeIn();
+})
+$(".item").mouseleave(function(){
+    $(".buyutec").fadeOut();
+})
